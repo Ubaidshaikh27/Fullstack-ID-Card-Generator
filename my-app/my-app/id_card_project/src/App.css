@@ -1,0 +1,173 @@
+/* Reset some default styles */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: rgb(173, 86, 86);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+
+.container{
+  display: flex;
+  
+  }
+
+/* ID Card container */
+.id-card {
+  width: 400px;
+  border: 2px solid #333;
+  border-radius: 10px;
+  background-color: #fff;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.id-card-header {
+  background-color: #007BFF;
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
+
+.id-card-header h2 {
+  font-size: 24px;
+}
+
+.id-card-header p {
+  font-size: 14px;
+}
+
+/* Body of the ID card */
+.id-card-body {
+  display: flex;
+  padding: 20px;
+  justify-content: space-between;
+}
+
+.photo img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 3px solid #007BFF;
+}
+
+.details {
+  margin-left: 15px;
+}
+
+.details h3 {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.details p {
+  font-size: 14px;
+  margin: 4px 0;
+}
+
+.details p strong {
+  font-weight: bold;
+}
+
+/* Footer */
+.id-card-footer {
+  background-color: #f4f4f4;
+  text-align: center;
+  padding: 10px;
+  font-size: 12px;
+  border-top: 1px solid #ddd;
+}
+
+.master {
+  margin-left: 5px;
+}
+
+.onimage{
+  margin-top: 37px;
+}
+
+.downl{
+  margin-top: 10px;
+  margin-left: 5px;
+}
+
+.submitBtn{
+  margin-top: 30px;
+}
+
+ /* Print a specific div */
+
+@media print {
+  body * {
+   visibility: hidden;
+  }
+  .id-card, .id-card * {
+   visibility: visible;
+  }
+  .id-card {
+   position: absolute;
+   left: 0;
+   top: 0;
+  }
+ }
+
+.table {
+  
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  font-family: sans-serif;
+  min-width: 400px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+th{ 
+  border: "1px solid #ccc";
+  padding: 12px 15px;
+  background-color: "#f4f4f4" 
+}
+
+td {
+  border: "1px solid black";
+  padding: 12px 15px;
+  color: #0e0707;
+  background-color: #f4f4f4;
+}
+
+thead tr {
+  background-color: #009879;
+  color: #ffffff;
+  text-align: left;
+}
+
+tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+tbody tr:last-of-type {
+  border-bottom: 2px solid #050505;
+}
+
+tbody tr.active-row {
+  font-weight: bold;
+  color: #009879;
+}
+
+.tableImage {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 3px solid #007BFF;
+}
+
+.navigateButton{ 
+  margin-left: 30px;
+  margin-top: 10px;
+}
